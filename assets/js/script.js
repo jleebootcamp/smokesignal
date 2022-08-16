@@ -77,6 +77,18 @@ function data() {
 
           var requestUrl = 'https://data.seattle.gov/resource/kzjm-xkqj.json';
 
+          fetch(requestUrl)
+          .then(response => response.json())
+          .then(function(data) {
+              for (var i = 0; i < data.length; i++) {
+                  const newRow = document.getElementById('rowEl');
+                  const newAddress = 
+                  let addressText = document.createTextNode(data[i].address);
+                  const addressEl = document.getElementById('address');
+                  addressEl.appendChild(addressText);
+              }
+          })
+/*
           let addressText = document.createTextNode('Test Address 01');
           let alarmTypeText = document.createTextNode('Test Alarm Type 01');
           let incidentDateText = document.createTextNode('Test Incident Date 01');
@@ -92,7 +104,7 @@ function data() {
           address.appendChild(addressText);
           alarmType.appendChild(alarmTypeText)
           incidentDate.appendChild(incidentDateText);
-
+*/
           console.log("getAPI function complete");
       }
     }
