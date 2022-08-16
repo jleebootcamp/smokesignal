@@ -58,6 +58,19 @@ function data() {
         this.isModalOpen = false
         this.trapCleanup()
       },
+      getApi() {
+        console.log("getAPI function working");
+        var requestUrl = 'https://data.seattle.gov/resource/kzjm-xkqj.json';
+        fetch(requestUrl)
+        .then(response => response.json())
+        .then(function(data) {
+        for (var i = 0; i < data.length; i++) {
+            var listItem = document.createElement('li');
+            listItem.textContent = data[i].address;
+            repoList.appendChild(listItem);
+        }
+      })
+      .catch(err => console.error(err));
+      }
     }
   }
-  
