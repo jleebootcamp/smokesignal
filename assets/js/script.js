@@ -71,7 +71,7 @@ function data() {
         }
       })
       .catch(err => console.error(err));
-      } */
+      }
       getApi() {
           console.log("getAPI function start");
 
@@ -88,7 +88,7 @@ function data() {
                   addressEl.appendChild(addressText);
               }
           })
-/*
+
           let addressText = document.createTextNode('Test Address 01');
           let alarmTypeText = document.createTextNode('Test Alarm Type 01');
           let incidentDateText = document.createTextNode('Test Incident Date 01');
@@ -104,8 +104,7 @@ function data() {
           address.appendChild(addressText);
           alarmType.appendChild(alarmTypeText)
           incidentDate.appendChild(incidentDateText);
-*/
-          console.log("getAPI function complete");
+
+          console.log("getAPI function complete"); */
       }
     }
-  }
