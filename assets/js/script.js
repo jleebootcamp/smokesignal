@@ -93,9 +93,25 @@ function data() {
     }
 }
 function initMap(){
+  var requestURL = 'https://data.seattle.gov/resource/kzjm-xkqj.json?$limit=10'
   var options = {
     center: {lat: 47.6062, lng: -122.3321},
     zoom: 8
   }
-  map = new google.maps.Map(document.getElementById("map"), options)
+  map = new google.maps.Map(document.getElementById("map"), options);
+
+  fetch(requestURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function(data) {
+      console.log(data)
+      for (var i=0; i < data.length; i++) {
+        marker = new google.maps.Marker({
+          position: new google.maps.LatLng(data[i].latitude, data[i].longitude),
+          map: map,
+          title: data[i].address
+        })
+      }
+    })
 }
