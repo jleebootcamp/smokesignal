@@ -9,6 +9,7 @@
       rel="stylesheet"
       />
     <link rel="stylesheet" href="./assets/css/tailwind.output.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" />
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
@@ -406,8 +407,6 @@
           </div>
       </section>
 
-      <div id="map"></div>
-
         <main class="h-full overflow-y-auto">
           <div class="container px-6 mx-auto grid">
             <h1
@@ -555,9 +554,14 @@
             </div>
           </div>
         </main>
+        <div id="map"></div>
       </div>
     </div>
     <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap"
+      defer
+    ></script>
   </body>
   <footer> © 2022 Smoke Signal All rights reserved.
   </footer>
