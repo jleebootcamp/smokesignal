@@ -23,8 +23,6 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
       defer
     ></script>
-    <script src="./assets/js/charts-lines.js" defer></script>
-    <script src="./assets/js/charts-pie.js" defer></script>
   </head>
   <body>
 
@@ -318,7 +316,6 @@
           <div
             class="container flex items-center justify-between h-full px-6 mx-auto text-purple-600 dark:text-purple-300"
           >
-
             <!-- Search input -->
             <div class="flex justify-center flex-1 lg:mr-32">
               <div
@@ -431,24 +428,26 @@
                       <th class="px-4 py-3">Date</th>
                     </tr>
                   </thead>
-                  <tbody
+                  <tbody id="tableBody"
                     class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800"
                   >
                     <tr class="text-gray-700 dark:text-gray-400">
                       <td class="px-4 py-3">
                         <div class="flex items-center text-sm">
-                          <div id="address">
-                            <p class="font-semibold">8221 5th Ave Ne</p>
+                          <div>
+                            <p id="address" class="font-semibold">
+
+                            </p>
                           </div>
                         </div>
                       </td>
                       <td class="px-4 py-3 text-sm">
-                        <span class="px-2 py-1 font-semibold leading-tight text-red-700 bg-red-100 rounded-full dark:bg-red-700 dark:text-red-100">
-                        Alarm Bell
-                      </span>
+                        <!-- <span id = "alarmType" class="px-2 py-1 font-semibold leading-tight text-red-700 bg-red-100 rounded-full dark:bg-red-700 dark:text-red-100"> -->
+                        <span id = "alarmType" class="px-2 py-1 font-semibold">
+                        </span>
                       </td>
-                      <td class="px-4 py-3 text-xs">
-                        2022 Aug 11 06:43
+                      <td id = "incidentDate" class="px-4 py-3 text-xs">
+
                       </td>
                     </tr>
                   </tbody>
@@ -458,7 +457,7 @@
                 class="grid px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800"
               >
                 <span class="flex items-center col-span-3">
-                  Showing 21-30 of 100
+                  Showing 21-30 of 100 (Placeholder Text)
                 </span>
                 <span class="col-span-2"></span>
 
