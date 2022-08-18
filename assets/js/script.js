@@ -133,3 +133,14 @@ function initMap(){
       }
     })
 }
+var heroSection
+function show_hide() {
+  if(heroSection==1) {
+    document.getElementById("hero").style.display="inline";
+    return heroSection=0;
+  }
+  else {
+    document.getElementById("hero").style.display="none";
+    return heroSection=0;
+  }
+}
