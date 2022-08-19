@@ -151,7 +151,7 @@ function initMap(){
       marker.setVisible(false);
       var place = autocomplete.getPlace();
       if (!place.geometry) {
-          window.alert("Autocomplete's returned place contains no geometry");
+          window.alert("This place contains no geometry");
           return;
       }
       if (place.geometry.viewport) {
