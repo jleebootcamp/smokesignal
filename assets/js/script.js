@@ -192,8 +192,9 @@ function initMap(){
   });
 }
 
+var heroSection
+
 function show_hide() {
-    var heroSection
     if(heroSection==1) {
         document.getElementById("hero").style.display="inline";
         return heroSection=0;
