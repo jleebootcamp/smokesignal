@@ -92,7 +92,7 @@ function data() {
       },
       filter() {
         var input, filter, table, tr, td, cell, i, j;
-        filter = document.getElementById("searchInput").value.toLowerCase();
+        filter = document.getElementById("filterInput").value.toLowerCase();
         table = document.getElementById("userTable");
         tr = table.getElementsByTagName("tr");
         for (i = 1; i < tr.length; i++) {
