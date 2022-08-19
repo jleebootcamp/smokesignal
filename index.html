@@ -317,6 +317,14 @@
           <div
             class="container flex items-center justify-between h-full px-6 mx-auto text-red-700 dark:text-red-700"
           >
+          <!-- Home Icon -->
+          <div class="px-6">
+          <a href="index.html">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+          </a></svg>
+            </div>
+
             <!-- Search input -->
             <div class="flex justify-center flex-1 lg:mr-32">
               <div
@@ -338,7 +346,7 @@
                 </div>
                 <input
                   id="searchInput"
-                  class="w-full pl-8 pr-2 text-sm text-gray-700 placeholder-gray-600 bg-gray-100 border-0 rounded-md dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-200 focus:placeholder-gray-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple form-input"
+                  class="w-full pl-8 pr-2 text-sm text-gray-700 placeholder-gray-600 bg-white border-0 rounded-md dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-200 focus:placeholder-gray-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple form-input"
                   type="text"
                   placeholder="Filter your results here after refreshing the dataset!"
                   aria-label="Search"
@@ -350,7 +358,7 @@
             <div class="px-2"> 
             
             <button
-            class="text-sm text-gray-700 placeholder-gray-600 bg-gray-100 border-0 rounded-md dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-200 focus:placeholder-gray-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple font-bold py-2 px-4 border border-gray-800"
+            class="text-sm text-gray-700 placeholder-gray-600 bg-white border-0 rounded-md dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-200 focus:placeholder-gray-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple font-bold py-2 px-4 border border-gray-800"
             @click="getApi"
             onclick="show_hide()"
             aria-label="Refresh"
@@ -362,7 +370,7 @@
           <!-- Filter/search through results -->
           <div class="px-2">
           <button
-              class="text-sm text-gray-700 placeholder-gray-600 bg-gray-100 border-0 rounded-md dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-200 focus:placeholder-gray-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple font-bold py-2 px-4 border border-gray-800"
+              class="text-sm text-gray-700 placeholder-gray-600 bg-white border-0 rounded-md dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-200 focus:placeholder-gray-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple font-bold py-2 px-4 border border-gray-800"
               @click="filter"
               aria-label="Filter"
               >
@@ -372,7 +380,7 @@
             </div>
             </div>
 
-          <ul class="flex items-center flex-shrink-0 space-x-6">
+          <ul class="flex items-center flex-shrink-0 space-x-6 px-6">
 
               <!-- Theme toggler -->
               <li class="flex">
@@ -414,7 +422,7 @@
         </header>
         
         <!-- Hero Section -->
-        <section class="bg-red-200 dark:bg-gray-900" id="hero">
+        <section class="bg-white dark:bg-gray-900" id="hero">
           <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
               <div class="mr-auto place-self-center lg:col-span-7">
                   <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Smoke Signal</h1>
@@ -579,8 +587,8 @@
       </div>
     </div>
 
-    <footer class="bottom-0 w-full p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 Smoke Signal™. All Rights Reserved.
+    <footer class="bottom-0 w-full p-4 bg-red-200 rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+      <span class="text-sm text-gray-800 sm:text-center dark:text-gray-200">© 2022 Smoke Signal™. All Rights Reserved.
       </span>
     </footer>
 
