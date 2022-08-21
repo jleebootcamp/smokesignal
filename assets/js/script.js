@@ -145,11 +145,11 @@ function initMap(){
     autocomplete.addListener('place_changed', function() {
         infowindow.close();
         marker.setVisible(false);
-        var place = autocomplete.getPlace();
-        if (!place.geometry) {
-            window.alert("This place contains no geometry");
-            return;
-        }
+        //var place = autocomplete.getPlace();
+        //if (!place.geometry) {
+            //window.alert("Please click or tap on the correct search result");
+            //return;
+        //}
         if (place.geometry.viewport) {
             map.fitBounds(place.geometry.viewport);
         } else {
