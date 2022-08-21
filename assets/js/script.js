@@ -145,7 +145,7 @@ function initMap(){
     autocomplete.addListener('place_changed', function() {
         infowindow.close();
         marker.setVisible(false);
-        //var place = autocomplete.getPlace();
+        var place = autocomplete.getPlace();
         //if (!place.geometry) {
             //window.alert("Please click or tap on the correct search result");
             //return;
