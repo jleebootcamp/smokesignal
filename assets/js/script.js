@@ -148,10 +148,10 @@ function initMap(){//I want to make different calls diferent icons on the map
         infowindow.close();
         marker.setVisible(false);
         var place = autocomplete.getPlace();
-        if (!place.geometry) {
-            window.alert("This place contains no geometry");
-            return;
-        }
+        //if (!place.geometry) {
+            //window.alert("Please click or tap on the correct search result");
+            //return;
+        //}
         if (place.geometry.viewport) {
             map.fitBounds(place.geometry.viewport);
         } else {
