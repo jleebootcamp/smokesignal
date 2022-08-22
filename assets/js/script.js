@@ -107,11 +107,11 @@ function data() {
     }
 }
 
-function initMap(){
-    var requestURL = 'https://data.seattle.gov/resource/kzjm-xkqj.json?$limit=10'
+function initMap(){//I want to make different calls diferent icons on the map 
+    var requestURL = 'https://data.seattle.gov/resource/kzjm-xkqj.json?$limit=30'
     var options = {
         center: {lat: 47.6062, lng: -122.3321},
-        zoom: 8
+        zoom: 10
     }
     map = new google.maps.Map(document.getElementById("map"), options);
 
@@ -125,10 +125,12 @@ function initMap(){
             marker = new google.maps.Marker({
             position: new google.maps.LatLng(data[i].latitude, data[i].longitude),
             map: map,
-            title: data[i].address
-            })
+            title: data[i].type,
+            icon: "assets/firedept.png"
+            });
         }
     })
+
 
     var input = document.getElementById('searchInput');
     console.log(input)
